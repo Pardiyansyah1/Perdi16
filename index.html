@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERANDA - TIKET PESAWAT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <div class="nav-container">
+            <h1 class="logo">TIKET PESAWAT</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="tentang.html">TENTANG</a></li>
+                <li><a href="fasilitas.html">FASILITAS</a></li>
+                <li><a href="kontak.html">KONTAK</a></li>
+                <li><a href="registrasi.html">REGISTRASI</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Halaman Beranda -->
+    <section id="home">
+        <h2>SELAMAT DATANG DI TIKET PESAWAT</h2>
+        <p>PEMESANAN TIKET MUDAH, CEPAT, DAN TERPERCAYA.</p>
+
+        <!-- Form Pemesanan Tiket -->
+        <div class="form-booking-container">
+            <form id="bookingForm">
+                <label for="namaBooking">NAMA</label>
+                <input type="text" id="namaBooking" placeholder="Masukkan nama Anda" required>
+
+                <label for="asal">KOTA ASAL</label>
+                <input type="text" id="asal" placeholder="Contoh: Jakarta" required>
+
+                <label for="tujuan">KOTA TUJUAN</label>
+                <input type="text" id="tujuan" placeholder="Contoh: Bali" required>
+
+                <label for="tanggal">TANGGAL KEBERANGKATAN</label>
+                <input type="date" id="tanggal" required>
+
+                <button type="submit">PESAN SEKARANG</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TIKET PESAWAT</p>
+    </footer>
+</body>
+
+</html>

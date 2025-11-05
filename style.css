@@ -1,0 +1,356 @@
+/* ===============================
+   UMUM
+=============================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+}
+
+/* ===============================
+   NAVIGASI
+=============================== */
+nav {
+    background: #0078d7;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    background: white;
+    color: #0078d7;
+}
+
+/* ===============================
+   BAGIAN UTAMA
+=============================== */
+section {
+    padding: 40px 10%;
+}
+
+#home {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#home h2 {
+    font-size: 28px;
+    color: #0078d7;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #005fa3;
+}
+
+/* ===============================
+   FORM REGISTRASI & LOGIN
+=============================== */
+.form-container {
+    max-width: 400px;
+    background: white;
+    margin: 60px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0078d7;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background: #005fa3;
+}
+
+.form-container .info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-container .info a {
+    color: #0078d7;
+    text-decoration: none;
+}
+
+.form-container .info a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   ADMIN PAGE
+=============================== */
+.admin-container {
+    max-width: 500px;
+    background: white;
+    margin: 100px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h1 {
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+    text-align: center;
+    background: #0078d7;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* ===============================
+   KONTEN HALAMAN (Tentang, Fasilitas, Kontak)
+=============================== */
+.content-section {
+    background: white;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    color: #0078d7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-section p,
+.content-section ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.content-section li {
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px 5%;
+    }
+
+    .form-container {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+
+    .content-section {
+        margin: 20px 10px;
+        padding: 25px;
+    }
+}
+/* ===============================
+   TABEL ADMIN
+=============================== */
+.admin-section {
+    max-width: 900px;
+    background: white;
+    margin: 40px auto;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h2 {
+    color: #0078d7;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #0078d7;
+    color: white;
+}
+
+td button {
+    background: #e53935;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background: #c62828;
+}
+
+.logout-btn {
+    background: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #005fa3;
+}
+/* ===============================
+   FORM PEMESANAN TIKET
+=============================== */
+.form-booking-container {
+    max-width: 450px;
+    background: white;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-booking-container form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-booking-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form-booking-container button {
+    width: 100%;
+    padding: 12px;
+    background: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-booking-container button:hover {
+    background: #005fa3;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    .form-booking-container {
+        width: 90%;
+        padding: 25px;
+    }
+}

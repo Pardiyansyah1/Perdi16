@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRASI - TIKET PESAWAT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1 class="logo">TIKET PESAWAT</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="registrasi.html" class="active">Registrasi</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h2>REGISTRASI AKUN</h2>
+        <form id="registerForm">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan nama lengkap" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukkan email aktif" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukkan password" required>
+
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+
+        <p class="info">Sudah punya akun? <a href="login.html">Login di sini</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TIKET PESAWAT</p>
+    </footer>
+</body>
+
+</html>
