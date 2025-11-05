@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Nilai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h2 class="logo">PORTAL AKADEMIK</h2>
+            <ul>
+                <li><a href="index.html" class="active">INPUT NILAI</a></li>
+                <li><a href="lihatdata.html">LIHAT DATA MAHASISWA</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-box">
+            <h2>FORMULIR INPUT NILAI</h2>
+            <form id="formNilai">
+                <label>Nama Lengkap</label>
+                <input type="text" id="nama" placeholder="Masukkan nama lengkap" required>
+
+                <label>NIM (Nomor Induk Mahasiswa)</label>
+                <input type="text" id="nim" placeholder="Contoh: 10119001" required>
+
+                <label>Mata Kuliah</label>
+                <select id="matkul" required>
+                    <option value="">Pilih mata kuliah...</option>
+                    <option value="MK001 - Kalkulus 1">Rekayasa Perangkat Lunak</option>
+                    <option value="MK002 - Fisika Dasar">Fisika Dasar</option>
+                    <option value="MK003 - Algoritma & Pemrograman">Algoritma & Pemrograman</option>
+                    <option value="MK004 - Bahasa Indonesia">Bahasa Indonesia</option>
+                </select>
+
+                <label>Nilai Mahasiswa</label>
+                <input type="number" id="nilai" placeholder="85.5" required step="0.1" min="0" max="100">
+
+                <button type="submit">SIMPAN DATA</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
